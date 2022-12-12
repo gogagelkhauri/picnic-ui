@@ -3,7 +3,7 @@ import QuestionList from './QuestionList';
 
 const Home = () => {
     
-    const {data: questions,isPending, error} = usefetch('https://picnic-ui.herokuapp.com/questions');
+    const {data: questions,isPending, error} = usefetch('https://picnic-api.herokuapp.com/questions');
     return ( 
         <div className="home">
            { error && <div>{error}</div> }
