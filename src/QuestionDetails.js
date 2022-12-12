@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const QuestionDetails = () => {
     const {title} = useParams();
-    const {data: question, error, isPending} = useFetch('http://20.56.36.127:5000/questions/' + title);
+    const {data: question, error, isPending} = useFetch('https://picnic-ui.herokuapp.com/questions/' + title);
 
     const sumValues =  (obj)  => {
         return obj.reduce((acc, value) => acc + parseFloat(value.Count), 0);

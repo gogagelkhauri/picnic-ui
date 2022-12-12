@@ -3,7 +3,7 @@ import QuestionList from './QuestionList';
 
 const Home = () => {
     
-    const {data: questions,isPending, error} = usefetch('http://20.56.36.127:5000/questions');
+    const {data: questions,isPending, error} = usefetch('https://picnic-ui.herokuapp.com/questions');
     return ( 
         <div className="home">
            { error && <div>{error}</div> }
